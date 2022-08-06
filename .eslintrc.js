@@ -19,6 +19,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
     'plugin:prettier/recommended', // 添加 prettier 插件
+    './.eslintrc-auto-import.json',
   ],
 
   parserOptions: {
@@ -55,4 +56,4 @@ module.exports = {
     'no-param-reassign': 'off',
     'no-debugger': 'off',
   },
-}
+};

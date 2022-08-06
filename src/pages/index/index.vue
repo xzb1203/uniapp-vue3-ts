@@ -1,17 +1,16 @@
 <template>
   <view class="content">
     <image class="logo" src="/static/logo.png" />
-    <view class="text-area">
+    <view class="text-area" style="border: 1px solid red">
       <text class="title">{{ title }}</text>
       <text>{{ test }}</text>
-      <text class="ml-5">33333</text>
+      <text class="ml-15">33333</text>
     </view>
   </view>
 </template>
 
 <script setup lang="ts">
 import { useUserStore } from '@/store/modules/login';
-import { ref, computed } from 'vue';
 const test = computed(() => useUserStore().test);
 const title = ref('Hello');
 </script>
